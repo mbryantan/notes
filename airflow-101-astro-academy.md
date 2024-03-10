@@ -50,18 +50,23 @@ Additional components:
 ### Quiz
 
 Q: Select the 4 factors that define the uniqueness of an XCOM
+
 A: key, dag_id, task_id, logical_date
 
 Q: Is it possible to push an XCOM without explicitly specifying a key?
+
 A: Yes
 
 Q: An XCOM is pushed into..
+
 A: The database
 
 Q: With Postgres, can you share 2Gb of data between 2 tasks with an XCOM?
+
 A: No (max 1GB)
 
 Q: How the Scheduler knows which XCOM to choose for a given DAGRun when multiple XCOMs have the same key, dag_id, and task_id?
+
 A: It selects the XCOM based on the logical date
 
 
@@ -81,12 +86,15 @@ default poke interval: 60 seconds
 default timeout: 7 days
 
 Q: You can't find the connection type Amazon Web Services. What should you do?
+
 A: Install the apache-airflow-providers-amazon
 
 Q: If the file never arrives in the S3 bucket. When will the S3KeySensor time out?
+
 A: In 7 days
 
 Q: Does the Sensor instantly detect the file when it arrives in the bucket?
+
 A: No, it depends on the poke_interval
 
 ### Custom Sensor Operator Example
@@ -140,6 +148,7 @@ When using sensors, keep the following in mind to avoid potential performance is
 ### Quiz
 
 Q: A Sensor can be used for (Choose all that apply):
+
 A:
  - waiting for files to appear in an S3 bucket
  - waiting for a task in another DAG to complete
@@ -149,15 +158,19 @@ A:
 Q: You have a sensor that waits for a file to arrive in an S3 bucket. Your DAG runs every 10 mins, and it takes 8 mins to complete.
 
 What is the most appropriate timeout duration for the sensor? (in seconds)
+
 A: 60 * 60
 
 Q: What mode doesn't take a worker slot while a Sensor waits?
+
 A: reschedule
 
 Q: What Sensor(s) can be used to apply logic conditions? (Choose all that apply)
+
 A: PythonSensor and @task.sensor
 
 Q: What parameter can be useful to check for data to be present in a database without putting too much workload on each poke?
+
 A: exponential_backoff
 
 
@@ -223,22 +236,28 @@ Example: `airflow tasks test cli my_task 2023-01-01`
 ### Quiz
 
 Q: What is the purpose of airflow db init and when might you use it?
+
 A: Initializes the Airflow metadata database, typically used when setting up Airflow for the first time
 
+
 Q: What is the use case for airflow config get-value and how might you use it to troubleshoot issues?
+
 A: Retrieves the value of a specific configuration option, useful for verifying that configuration settings are correctly set
 
 Q: You've recently upgraded your Airflow installation, but now your DAGs is not showing up in the UI. Which commands could you use to identify any import/parsing errors that might be preventing the DAG from being loaded?
+
 A: `airflow dags report`
 
 Q: Why would you use Airflow's backfill functionality?
+
 A: To fill in missing historical data that was not previously captured
 
 Q: What does the airflow db check command do?
+
 A: Checks the connection to the Airflow database
 
 
-`TODO` Modules not included here:
+### TODO: Modules not included
 - UI
 - DAGS 101
 - DAG Scheduling
