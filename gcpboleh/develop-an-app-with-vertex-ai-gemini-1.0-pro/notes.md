@@ -1,3 +1,20 @@
+## Foundation models
+
+Vertex AI has various genAI foundation models, including:
+- Gemini API: For advanced reasoning, multiturn chat, code generation, and multimodal prompts.
+- PaLM API: For natural language tasks, text embeddings, and multiturn chat.
+- Codey APIs: For code generation, code completion, and code chat.
+- Imagen API: For image generation, image editing, and visual captioning.
+- MedLM: For summarizing and answering medical questions.
+
+
+## Sample uses of the Gemini API
+
+- Generate code from natural language descriptions.
+- Create image captions that go beyond simple descriptions.
+- Answer questions about the content of images and videos.
+- Generate different creative text formats, like poems, code, scripts, musical pieces, email, letters, and stories.
+
 
 **Configure environment and project**
 
