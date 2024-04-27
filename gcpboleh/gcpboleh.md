@@ -10,7 +10,7 @@
 - [ ] [Predict Soccer Match Outcomes with BigQuery ML (4h45m)](https://www.cloudskillsboost.google/course_templates/656)
 - [ ] [Detect Manufacturing Defects using Visual Inspection AI (7h15m)](https://www.cloudskillsboost.google/course_templates/644)
 
-- [ ] [Create and Manage AlloyDB Databases (9h30m)] (https://www.cloudskillsboost.google/course_templates/642)
+- [ ] [Create and Manage AlloyDB Databases (9h30m)](https://www.cloudskillsboost.google/course_templates/642)
 - [ ] [Manage PostgreSQL Databases on Cloud SQL (4h30m)](https://www.cloudskillsboost.google/course_templates/652)
 - [ ] [Monitor and Manage Google Cloud Resources (3h)](https://www.cloudskillsboost.google/course_templates/653)
 
