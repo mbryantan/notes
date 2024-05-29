@@ -14,12 +14,15 @@ or
 - [x] [Analyze Images with the Cloud Vision API (3h)](https://www.cloudskillsboost.google/course_templates/633)
 - [x] [Analyze Speech and Language with Google APIs (2h45m)](https://www.cloudskillsboost.google/course_templates/634)
 - [x] [Predict Soccer Match Outcomes with BigQuery ML (4h45m)](https://www.cloudskillsboost.google/course_templates/656)
+- [x] [Monitor and Manage Google Cloud Resources (3h)](https://www.cloudskillsboost.google/course_templates/653)
+- [x] [Manage Kubernetes in Google Cloud (5h)](https://www.cloudskillsboost.google/course_templates/783)
 
-- [?] [Monitor and Manage Google Cloud Resources (3h)](https://www.cloudskillsboost.google/course_templates/653)
-- [?] [Manage PostgreSQL Databases on Cloud SQL (4h30m)](https://www.cloudskillsboost.google/course_templates/652)
+- [NO] [Classify Images with TensorFlow on Google Cloud](https://www.cloudskillsboost.google/course_templates/646/labs/476323)
+- [NO] [Manage PostgreSQL Databases on Cloud SQL (4h30m)](https://www.cloudskillsboost.google/course_templates/652)
+- [NO] [Detect Manufacturing Defects using Visual Inspection AI (7h15m)](https://www.cloudskillsboost.google/course_templates/644)
+- [NO] [Create and Manage AlloyDB Databases (9h30m)](https://www.cloudskillsboost.google/course_templates/642)
 
-- [ ] [Detect Manufacturing Defects using Visual Inspection AI (7h15m)](https://www.cloudskillsboost.google/course_templates/644)
-- [ ] [Create and Manage AlloyDB Databases (9h30m)](https://www.cloudskillsboost.google/course_templates/642)
+
 
 
 ### Regular Badges (8)
