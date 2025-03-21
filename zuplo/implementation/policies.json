@@ -1,12 +1,8 @@
 {
-  "policies": [
-    {
-      "name": "api-key-auth",
-      "policyType": "api-key",
-      "options": {
-        "headerName": "x-api-key",
-        "queryStringName": "api_key"
-      }
-    }
-  ]
+  "export": "ApiKeyInboundPolicy",
+  "module": "$import(@zuplo/runtime)",
+  "options": {
+    "allowUnauthenticatedRequests": false,
+    "cacheTtlSeconds": 60
+  }
 }

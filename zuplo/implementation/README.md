@@ -53,12 +53,47 @@ zuplo/implementation/
 ### 2. Zuplo Setup
 
 1. Create a Zuplo account at [zuplo.com](https://zuplo.com)
-2. Create a new project
-3. Upload the files from this implementation to your Zuplo project
-4. Update the `environment.json` file with your Supabase URL and Anon Key
-5. Deploy your API
+2. Create a new project (choose the blank template)
 
-### 3. Create API Keys
+### 3. Files to Copy to Zuplo
+
+Here's a step-by-step guide on which files to copy from this implementation to your Zuplo project:
+
+#### Files to Copy Directly
+1. **modules/events-handler.ts**
+   - Create a folder called `modules` in your Zuplo project
+   - Create a file inside it called `events-handler.ts`
+   - Copy the content from this implementation's `events-handler.ts` file
+
+2. **environment.json**
+   - Copy this file to your Zuplo project
+   - Update it with your actual Supabase credentials
+
+3. **policies.json**
+   - Copy this file directly to your Zuplo project
+
+#### Files to Adapt
+1. **routes.json → routes.oas.json**
+   - In newer Zuplo projects, you'll see `routes.oas.json` instead of `routes.json`
+   - You need to convert the content from `routes.json` to the OpenAPI Specification (OAS) format
+   - See the example in the "Converting routes.json to routes.oas.json" section below
+
+#### Files to Reference But Not Copy
+1. **package.json**
+   - Don't copy directly, but add the Supabase dependency to your Zuplo project's package.json:
+   ```json
+   "@supabase/supabase-js": "^2.39.3"
+   ```
+2. **supabase-setup.sql**
+   - Use this to set up your Supabase database, but don't copy to Zuplo
+3. **tsconfig.json**
+   - Don't copy this file as Zuplo has its own TypeScript configuration
+
+### 5. Deploy Your API
+1. Save all your changes
+2. Deploy your API using the Zuplo dashboard
+
+### 6. Create API Keys
 
 1. In your Zuplo dashboard, navigate to the API Keys section
 2. Create a new API key for testing
@@ -84,7 +119,7 @@ GET /api/events
 Include your API key in the request header:
 
 ```
-x-api-key: YOUR_API_KEY
+authorization: YOUR_API_KEY
 ```
 
 Alternatively, you can include it as a query parameter:
@@ -99,21 +134,21 @@ Alternatively, you can include it as a query parameter:
 
 ```bash
 curl -X GET "https://your-project.zuplo.app/api/events" \
-  -H "x-api-key: your-api-key"
+  -H "authorization: your-api-key"
 ```
 
 #### With Pagination
 
 ```bash
 curl -X GET "https://your-project.zuplo.app/api/events?limit=5&offset=10" \
-  -H "x-api-key: your-api-key"
+  -H "authorization: your-api-key"
 ```
 
 #### With Time Filtering
 
 ```bash
 curl -X GET "https://your-project.zuplo.app/api/events?start_time=2025-01-01&end_time=2025-01-02" \
-  -H "x-api-key: your-api-key"
+  -H "authorization: your-api-key"
 ```
 
 ### Response Format

@@ -1,4 +1,4 @@
-import { ZuploContext, ZuploRequest } from "@zuplo/runtime";
+import { ZuploContext, ZuploRequest, environment } from "@zuplo/runtime";
 import { createClient } from '@supabase/supabase-js';
 
 export async function handleEvents(request: ZuploRequest, context: ZuploContext) {
@@ -35,8 +35,8 @@ export async function handleEvents(request: ZuploRequest, context: ZuploContext)
 
     // Initialize Supabase client with anon key (respects Row Level Security)
     const supabase = createClient(
-      process.env.SUPABASE_URL,
-      process.env.SUPABASE_ANON_KEY
+      environment.SUPABASE_URL,
+      environment.SUPABASE_ANON_KEY
     );
 
     // Build query
