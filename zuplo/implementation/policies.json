@@ -1,0 +1,12 @@
+{
+  "policies": [
+    {
+      "name": "api-key-auth",
+      "policyType": "api-key",
+      "options": {
+        "headerName": "x-api-key",
+        "queryStringName": "api_key"
+      }
+    }
+  ]
+}
